@@ -18,7 +18,9 @@ class Program
             Thread.Sleep(500);
             Console.WriteLine("v0.1a");
             Thread.Sleep(500);
-            
+            #pragma warning disable CA1416
+            Console.Beep(261, 800);
+            #pragma warning restore CA1416
         });
         标题.Start();
     }
